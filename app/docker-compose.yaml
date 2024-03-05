@@ -5,6 +5,6 @@ services:
       context: .
       dockerfile: console.Dockerfile
     ports:
-      - 8888:8888
+      - 127.0.0.1:9999:9999
     environment:
-      - TOKIO_CONSOLE_BIND=0.0.0.0:8888
+      - TOKIO_CONSOLE_BIND=127.0.0.1:9999
