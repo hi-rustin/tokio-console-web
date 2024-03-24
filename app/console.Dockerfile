@@ -10,8 +10,11 @@ RUN git clone https://github.com/tokio-rs/console.git /opt/console
 
 WORKDIR /opt/console
 
+# Build the app example with web feature enabled
+RUN cargo build --release --example grpc_web --features grpc-web
+
 # Start app example with web feature enabled
 CMD ["cargo", "run", "--release", "--example", "grpc_web", "--features", "grpc-web"]
 
-# Expose port 8888
-EXPOSE 8888
+# Expose port 9999
+EXPOSE 9999
