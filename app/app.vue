@@ -6,5 +6,6 @@
         <NuxtPage />
         <ConsoleMenu />
         <UNotifications />
+        <USlideovers />
     </UCard>
 </template>

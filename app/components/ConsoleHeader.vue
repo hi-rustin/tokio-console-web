@@ -7,6 +7,7 @@
         </template>
 
         <template #right>
+            <WarningsButton />
             <UButton
                 color="gray"
                 variant="ghost"
